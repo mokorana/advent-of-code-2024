@@ -1,0 +1,5 @@
+.idea
+/vendor/
+
+# Recursively ignore all files matching ".data"
+**/*.data
