@@ -9,5 +9,10 @@
     "squizlabs/php_codesniffer": "*",
     "vimeo/psalm": "^5.16",
     "phpunit/phpunit": "^10"
+  },
+  "config": {
+    "platform": {
+      "php": "8.3.0"
+    }
   }
 }
