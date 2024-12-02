@@ -51,7 +51,7 @@ function generateNewDay(int $day, string $name): void
 
     namespace Aoc;
 
-class Day{$dayFormatted} extends AbstractDay
+    class Day{$dayFormatted} extends AbstractDay
     {
         public function solvePart1(array \$lines): int
         {
