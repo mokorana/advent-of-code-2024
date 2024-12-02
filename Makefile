@@ -31,3 +31,15 @@ run-benchmark: ## Calculates average run-time for all puzzle solutions
 .PHONY: tests
 tests: ## Runs all unit tests with PHPUnit and Testdox
 	./vendor/bin/phpunit --testdox --colors tests
+
+.PHONY: generate
+generate: ## Genrats new files for the puzzle
+	@if [ -z "$(filter-out $@,$(MAKECMDGOALS))" ]; then \
+		echo "Usage: make generate DAY NAME"; \
+		exit 1; \
+	fi
+	@php src/GenerateDay.php $(word 2,$(MAKECMDGOALS)) "$(wordlist 3,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))"
+
+# Prevent Make from interpreting arguments as targets
+%:
+	@:
