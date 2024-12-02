@@ -1,12 +1,13 @@
 <?php
+
 /**
  * Defines the abstract base class `AbstractDay`, which serves as a
  * blueprint for solving daily puzzles in the Advent of Code challenge.
- * 
+ *
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-01 10:54:49
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-01 10:59:19
+ * @Last    Modified time: 2024-12-02 11:48:04
  *
  * @package Aoc
  */
@@ -29,8 +30,9 @@ abstract class AbstractDay
     /**
      * Returns the contents of the .data file for the respective day.
      *
-     * @return string
-     * @throws Exception
+     * @used-by Aoc\Day01
+     * @return  string
+     * @throws  Exception
      */
     protected function getInputString(): string
     {
@@ -42,6 +44,8 @@ abstract class AbstractDay
                 "Failed to read contents of " . __DIR__ . "/$matches[0].data"
             );
         }
-        return $contents;
+
+        // Ensure no trailing newlines or spaces
+        return rtrim($contents);
     }
 }

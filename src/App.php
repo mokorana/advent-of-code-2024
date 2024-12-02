@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Entry point for the Advent of Code application.
  *

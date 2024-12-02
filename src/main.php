@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Bootstrap file for the Advent of Code application.
  *
