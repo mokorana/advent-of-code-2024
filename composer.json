@@ -7,7 +7,7 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "*",
-    "vimeo/psalm": "^5.16",
+    "vimeo/psalm": "^5.26",
     "phpunit/phpunit": "^10"
   },
   "config": {
