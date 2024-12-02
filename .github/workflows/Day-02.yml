@@ -1,13 +1,12 @@
-name: Linting and Tests
-
+name: Day-02
 on:
   workflow_dispatch:
   push:
-
+    paths:
+      - "**02*"
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - uses: amplium/git-crypt-action@master
@@ -15,6 +14,4 @@ jobs:
           key_encoded: ${{ secrets.GIT_CRYPT_KEY }}
       - uses: php-actions/composer@v6
       - name: Run
-        run: |
-          make lint
-          make tests
+        run: php src/main.php 02 -b

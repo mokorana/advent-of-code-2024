@@ -1,0 +1,2 @@
+src/Day*.data filter=git-crypt diff=git-crypt
+tests/Unit/Day*.data filter=git-crypt diff=git-crypt
