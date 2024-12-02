@@ -2,9 +2,10 @@ My attempts at the [Advent of Code 2024](https://adventofcode.com/2024) challeng
 
 ## Solutions
 
-| Day | Name | Code                             | Input Data                         | Time †      | GitHub Action Output                                                                                                                                                                                              |
-| --- | ---- | -------------------------------- | ---------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01  | Historian Hysteria  | [src/Day01.php](./src/Day01.php) | [src/Day01.data](./src/Day01.data) | `0.009909s` | [![Day-01](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml?query=branch%3Amain) |
+| Day | Name               | Code                             | Input Data                         | Time †      | GitHub Action Output                                                                                                                                                                                              |
+| --- | ------------------ | -------------------------------- | ---------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | Historian Hysteria | [src/Day01.php](./src/Day01.php) | [src/Day01.data](./src/Day01.data) | `0.003701`  | [![Day-01](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml?query=branch%3Amain) |
+| 02  | Red-Nosed Reports  | [src/Day02.php](./src/Day01.php) | [src/Day02.data](./src/Day01.data) | `0.014919s` | [![Day-02](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-02.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-02.yml?query=branch%3Amain) |
 
 ## How to run
 
