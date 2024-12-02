@@ -4,7 +4,7 @@ My attempts at the [Advent of Code 2023](https://adventofcode.com/2023) challeng
 
 | Day | Name | Code                             | Input Data                         | Time †      | GitHub Action Output                                                                                                                                                                                              |
 | --- | ---- | -------------------------------- | ---------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 01  | TBD  | [src/Day01.php](./src/Day01.php) | [src/Day01.data](./src/Day01.data) | `0.000000s` | [![Day-01](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml?query=branch%3Amain) |
+| 01  | Historian Hysteria  | [src/Day01.php](./src/Day01.php) | [src/Day01.data](./src/Day01.data) | `0.009909s` | [![Day-01](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml?query=branch%3Amain) |
 
 ## How to run
 
