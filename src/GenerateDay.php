@@ -36,45 +36,45 @@ function generateNewDay(int $day, string $name): void
 
     // Create DayXX.php file
     $phpTemplate = <<<PHP
-    <?php
+<?php
 
-    /**
-     * Unit tests for the Advent of Code Day {dayFormatted} solution.
-     *
-     * @Author: Digitalbüro Mokorana
-     * @Date:   {$currentDateTime}
-     * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
-     * @Last    Modified time: {$currentDateTime}
-     *
-     * @package Aoc
-     */
+/**
+ * Unit tests for the Advent of Code Day {dayFormatted} solution.
+ *
+ * @Author: Digitalbüro Mokorana
+ * @Date:   {$currentDateTime}
+ * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
+ * @Last    Modified time: {$currentDateTime}
+ *
+ * @package Aoc
+ */
 
-    namespace Aoc;
+namespace Aoc;
 
-    class Day{$dayFormatted} extends AbstractDay
+class Day{$dayFormatted} extends AbstractDay
+{
+    public function solvePart1(array \$lines): int
     {
-        public function solvePart1(array \$lines): int
-        {
-            // TODO: Implement solution for Part 1
-            return 0;
-        }
-
-        public function solvePart2(array \$lines): int
-        {
-            // TODO: Implement solution for Part 2
-            return 0;
-        }
-
-        public function solve(): array
-        {
-            \$lines = explode("\\n", \$this->getInputString());
-            return [
-                "Part 1" => \$this->solvePart1(\$lines),
-                "Part 2" => \$this->solvePart2(\$lines)
-            ];
-        }
+        // TODO: Implement solution for Part 1
+        return 0;
     }
-  PHP;
+
+    public function solvePart2(array \$lines): int
+    {
+        // TODO: Implement solution for Part 2
+        return 0;
+    }
+
+    public function solve(): array
+    {
+        \$lines = explode("\\n", \$this->getInputString());
+        return [
+            "Part 1" => \$this->solvePart1(\$lines),
+            "Part 2" => \$this->solvePart2(\$lines)
+        ];
+    }
+}
+PHP;
 
     file_put_contents($dayPhpFile, $phpTemplate);
 
@@ -83,43 +83,43 @@ function generateNewDay(int $day, string $name): void
 
     // Create DayXXTest.php file
     $testTemplate = <<<PHP
-    <?php
+<?php
 
-    /**
-     * Unit tests for the Advent of Code Day {dayFormatted} solution.
-     *
-     * @Author: Digitalbüro Mokorana
-     * @Date:   {$currentDateTime}
-     * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
-     * @Last    Modified time: {$currentDateTime}
-     *
-     * @package Aoc
-     */
+/**
+ * Unit tests for the Advent of Code Day {dayFormatted} solution.
+ *
+ * @Author: Digitalbüro Mokorana
+ * @Date:   {$currentDateTime}
+ * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
+ * @Last    Modified time: {$currentDateTime}
+ *
+ * @package Aoc
+ */
 
-    namespace Aoc\Tests\Unit;
+namespace Aoc\Tests\Unit;
 
-    use Aoc\Day{$dayFormatted};
-    use PHPUnit\Framework\TestCase;
+use Aoc\Day{$dayFormatted};
+use PHPUnit\Framework\TestCase;
 
-    final class Day{$dayFormatted}Test extends TestCase
+final class Day{$dayFormatted}Test extends TestCase
+{
+    public function testPart1ExampleInput(): void
     {
-        public function testPart1ExampleInput(): void
-        {
-            \$dayPuzzle = new Day{$dayFormatted}();
-            \$input = explode("\\n", Helper::getSampleData('Day{$dayFormatted}Sample.data'));
+        \$dayPuzzle = new Day{$dayFormatted}();
+        \$input = explode("\\n", Helper::getSampleData('Day{$dayFormatted}Sample.data'));
 
-            \$this->assertSame(\$dayPuzzle->solvePart1(\$input), 11);
-        }
-
-        public function testPart2ExampleInput(): void
-        {
-            \$dayPuzzle = new Day{$dayFormatted}();
-            \$input = explode("\\n", Helper::getSampleData('Day{$dayFormatted}Sample.data'));
-
-            \$this->assertSame(\$dayPuzzle->solvePart2(\$input), 31);
-        }
+        \$this->assertSame(\$dayPuzzle->solvePart1(\$input), 11);
     }
-  PHP;
+
+    public function testPart2ExampleInput(): void
+    {
+        \$dayPuzzle = new Day{$dayFormatted}();
+        \$input = explode("\\n", Helper::getSampleData('Day{$dayFormatted}Sample.data'));
+
+        \$this->assertSame(\$dayPuzzle->solvePart2(\$input), 31);
+    }
+}
+PHP;
 
     file_put_contents($dayTestFile, $testTemplate);
 
@@ -129,19 +129,17 @@ function generateNewDay(int $day, string $name): void
     // Create GitHub Workflow file
     $workflowTemplate = <<<YAML
 name: Day-{$dayFormatted}
-
 on:
   workflow_dispatch:
   push:
     paths:
       - "**{$dayFormatted}*"
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: amplium/git-crypt-action@v1.0.0
+      - uses: amplium/git-crypt-action@master
         with:
           key_encoded: \${{ secrets.GIT_CRYPT_KEY }}
       - uses: php-actions/composer@v6
