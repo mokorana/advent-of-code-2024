@@ -151,7 +151,7 @@ YAML;
     // Update README.md
     // @phpcs:disable Generic.Files.LineLength
     $newRow = sprintf(
-        "| %s | %s | [src/Day%s.php](./src/Day%s.php) | [src/Day%s.data](./src/Day%s.data) | `TBD` | " .
+        "| %s | %s | [src/Day%s.php](./src/Day%s.php) | `TBD` | " .
         "[![Day-%s](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-%s.yml/badge.svg?branch=main)]" .
         "(https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-%s.yml?query=branch%%3Amain) |\n",
         $dayFormatted,
@@ -160,11 +160,8 @@ YAML;
         $dayFormatted,
         $dayFormatted,
         $dayFormatted,
-        $dayFormatted,
-        $dayFormatted,
         $dayFormatted
     );
-    // @phpcs:enable
 
     $readmeContent = file_get_contents($readmeFile);
 
@@ -182,28 +179,30 @@ YAML;
     // Locate the next "##" header after the solutions table
     $nextHeader = strpos($readmeContent, "##", $tableStart + 1);
     if ($nextHeader === false) {
-      // No other headers; assume the table extends to the end of the file
-        $tableEndContent = substr($readmeContent, $tableStart);
+        // No other headers; assume the table extends to the end of the file
+        $tableContent = substr($readmeContent, $tableStart);
     } else {
-      // Extract the content of the solutions table
-        $tableEndContent = substr($readmeContent, $tableStart, $nextHeader - $tableStart);
+        // Extract the content of the solutions table
+        $tableContent = substr($readmeContent, $tableStart, $nextHeader - $tableStart);
     }
 
-    // Find the last occurrence of "|" within the solutions table
-    $tableEnd = strrpos($tableEndContent, "|");
+    // Find the last occurrence of a newline within the table content
+    $lastNewline = strrpos($tableContent, "\n");
 
-    if ($tableEnd === false) {
-        throw new RuntimeException("Error: Could not locate the last row of the table in README.md.");
+    if ($lastNewline === false) {
+        throw new RuntimeException("Error: Could not locate the end of the table in README.md.");
     }
 
     // Calculate the actual position in the full file
-    $insertPosition = $tableStart + $tableEnd + 1; // +1 to go after the last "|"
+    $insertPosition = $tableStart + $lastNewline + 1; // +1 to place the new row on a new line
 
-    // Insert the new row after the table
+    // Insert the new row after the last row
     $updatedContent = substr_replace($readmeContent, $newRow, $insertPosition, 0);
 
-    // Save the updated README.md
-    file_put_contents($readmeFile, $updatedContent);
+    // Write the updated content back to the README file
+    if (file_put_contents($readmeFile, $updatedContent) === false) {
+        throw new RuntimeException("Error: Failed to write to {$readmeFile}");
+    }
 
     echo "Day {$dayFormatted} generated successfully with name '{$name}'.\n";
 }
