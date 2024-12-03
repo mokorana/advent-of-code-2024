@@ -6,7 +6,7 @@
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-02 10:32:11
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-02 15:23:54
+ * @Last    Modified time: 2024-12-03 11:19:39
  *
  * @package Aoc
  */
@@ -125,7 +125,7 @@ class Day02 extends AbstractDay
     }
 
     /**
-     * Solves the puzzle and returns parsedLiness for both parts.
+     * Solves the puzzle and returns parsedLines for both parts.
      *
      * @return array<string, int>
      */
