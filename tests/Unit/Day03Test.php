@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Unit tests for the Advent of Code Day {dayFormatted} solution.
+ * Unit tests for the Advent of Code Day 03 solution.
  *
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-03 08:25:26
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-03 11:24:05
+ * @Last    Modified time: 2024-12-04 09:37:36
  *
  * @package Aoc
  */

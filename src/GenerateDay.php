@@ -39,7 +39,7 @@ function generateNewDay(int $day, string $name): void
 <?php
 
 /**
- * Unit tests for the Advent of Code Day {dayFormatted} solution.
+ * Solution for Advent of Code Day {$dayFormatted}.
  *
  * @Author: Digitalbüro Mokorana
  * @Date:   {$currentDateTime}
@@ -86,7 +86,7 @@ PHP;
 <?php
 
 /**
- * Unit tests for the Advent of Code Day {dayFormatted} solution.
+ * Unit tests for the Advent of Code Day {$dayFormatted} solution.
  *
  * @Author: Digitalbüro Mokorana
  * @Date:   {$currentDateTime}
