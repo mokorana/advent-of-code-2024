@@ -7,7 +7,7 @@ My attempts at the [Advent of Code 2024](https://adventofcode.com/2024) challeng
 | 01  | Historian Hysteria | [src/Day01.php](./src/Day01.php) | `0.003701s` | [![Day-01](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-01.yml?query=branch%3Amain) |
 | 02  | Red-Nosed Reports  | [src/Day02.php](./src/Day01.php) | `0.014919s` | [![Day-02](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-02.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-02.yml?query=branch%3Amain) |
 | 03  | Mull It Over       | [src/Day03.php](./src/Day03.php) | `0.001430s` | [![Day-03](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-03.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-03.yml?query=branch%3Amain) |
-| 04  | Ceres Search       | [src/Day04.php](./src/Day04.php) | `TBD`       | [![Day-04](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-04.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-04.yml?query=branch%3Amain) |
+| 04  | Ceres Search       | [src/Day04.php](./src/Day04.php) | `0.018255s`       | [![Day-04](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-04.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-04.yml?query=branch%3Amain) |
 
 † The measured execution time in GitHub Actions
 
