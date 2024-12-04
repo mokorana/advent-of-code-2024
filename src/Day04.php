@@ -6,7 +6,7 @@
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-04 08:31:04
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-04 15:52:30
+ * @Last    Modified time: 2024-12-04 16:38:53
  *
  * @package Aoc
  */
@@ -75,8 +75,7 @@ class Day04 extends AbstractDay
 
                         // Adjust traversal direction based on diagonal type
                         $i++;
-                        $j = (int) $colIndex; // Cast to integer before operations
-                        $j += $topLeftToBottomRight ? 1 : -1;
+                        $topLeftToBottomRight ? ++$j : --$j;
                     }
 
                     $diagonals[] = $diagonal;
@@ -124,26 +123,6 @@ class Day04 extends AbstractDay
     }
 
     /**
-     * Solve part 1 of the challenge: Count matches for XMAS and SAMX.
-     *
-     * @param array<string> $lines The grid lines.
-     * @return int The total number of matches.
-     */
-    public function solvePart1(array $lines): int
-    {
-        $rows = $this->splitRows($lines);
-        $columns = $this->transformToColumns($rows);
-        $diagonals = array_merge(
-            $this->collectDiagonals($rows, true),  // Top-left to Bottom-right
-            $this->collectDiagonals($rows, false) // Top-right to Bottom-left
-        );
-
-        return $this->countMatches($rows) +
-               $this->countMatches($columns) +
-               $this->countMatches($diagonals);
-    }
-
-    /**
      * Count valid patterns around anchors.
      *
      * @param array<array<string>> $rows The grid rows.
@@ -175,6 +154,28 @@ class Day04 extends AbstractDay
         }
         return $sum;
     }
+
+    /**
+     * Solve part 1 of the challenge: Count matches for XMAS and SAMX.
+     *
+     * @param array<string> $lines The grid lines.
+     * @return int The total number of matches.
+     */
+    public function solvePart1(array $lines): int
+    {
+        $rows = $this->splitRows($lines);
+        $columns = $this->transformToColumns($rows);
+        $diagonals = array_merge(
+            $this->collectDiagonals($rows, true),  // Top-left to Bottom-right
+            $this->collectDiagonals($rows, false) // Top-right to Bottom-left
+        );
+
+        return $this->countMatches($rows) +
+               $this->countMatches($columns) +
+               $this->countMatches($diagonals);
+    }
+
+
 
     /**
      * Solve part 2 of the challenge: Count matches of X-MAS patterns
