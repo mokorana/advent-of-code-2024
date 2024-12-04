@@ -79,6 +79,14 @@ echo "${BASE64_ENCODED_KEY}" | base64 -d | git-crypt unlock -
 
 As mentioned above, the code for each puzzle can be run individually. But this project has additional tools to help with development.
 
+### Generate Quiz Files
+
+Some files have to be generated for every new quiz day. Those files can be automatically generated.
+
+```shell
+make generate 01 'name of quiz'
+```
+
 ### Tests
 
 Test-driven-development using unit tests can help with solving a puzzle by ensuring individual functions work as expected. Tests can be added in `tests/Unit/*` and run using [PHPUnit](http://phpunit.de). The flags `--testdox` and `--colors` can help make the output more legible:
