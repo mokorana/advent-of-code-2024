@@ -51,20 +51,42 @@ function generateNewDay(int $day, string $name): void
 
 namespace Aoc;
 
+/**
+ * The class is used, it's just called dynamically from App.php.
+ *
+ * @psalm-suppress UnusedClass
+ */
 class Day{$dayFormatted} extends AbstractDay
 {
+    /**
+     * Solve part 1 of the challenge.
+     *
+     * @param array<string> \$lines The grid lines.
+     * @return int The total number of valid "A" patterns.
+     */
     public function solvePart1(array \$lines): int
     {
         // TODO: Implement solution for Part 1
         return 0;
     }
 
+    /**
+     * Solve part 2 of the challenge.
+     *
+     * @param array<string> \$lines The grid lines.
+     * @return int The total number of valid "A" patterns.
+     */
     public function solvePart2(array \$lines): int
     {
         // TODO: Implement solution for Part 2
         return 0;
     }
 
+    /**
+     * Main solution function to handle input and return results for both parts.
+     *
+     * @return array<string, int>
+     */
     public function solve(): array
     {
         \$lines = explode("\\n", \$this->getInputString());
