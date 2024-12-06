@@ -9,10 +9,10 @@ My attempts at the [Advent of Code 2024](https://adventofcode.com/2024) challeng
 | 03  | Mull It Over       | [src/Day03.php](./src/Day03.php) | `0.001430s` | [![Day-03](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-03.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-03.yml?query=branch%3Amain) |
 | 04  | Ceres Search       | [src/Day04.php](./src/Day04.php) | `0.018255s` | [![Day-04](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-04.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-04.yml?query=branch%3Amain) |
 | 05  | Print Queue        | [src/Day05.php](./src/Day05.php) | `3.213716s`       | [![Day-05](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-05.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-05.yml?query=branch%3Amain) |
+| 06 | Guard Gallivant | [src/Day06.php](./src/Day06.php) | `70.499905s` | [![Day-06](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-06.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-06.yml?query=branch%3Amain) |
 
 † The measured execution time in GitHub Actions
 
-| 06 | Guard Gallivant | [src/Day06.php](./src/Day06.php) | `TBD` | [![Day-06](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-06.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-06.yml?query=branch%3Amain) |
 ## Installation
 
 ### Installing on your machine
