@@ -13,8 +13,6 @@
  * @package Aoc
  */
 
-use RuntimeException;
-
 /**
  * Generates the files and updates required for a new Advent of Code day.
  *
@@ -62,24 +60,26 @@ class Day{$dayFormatted} extends AbstractDay
      * Solve part 1 of the challenge.
      *
      * @param array<string> \$lines The grid lines.
-     * @return int The total number of valid "A" patterns.
+     * @return int 
      */
     public function solvePart1(array \$lines): int
     {
-        // TODO: Implement solution for Part 1
-        return 0;
+       \$sum = 0;
+
+        return \$sum;
     }
 
     /**
      * Solve part 2 of the challenge.
      *
      * @param array<string> \$lines The grid lines.
-     * @return int The total number of valid "A" patterns.
+     * @return int 
      */
     public function solvePart2(array \$lines): int
     {
-        // TODO: Implement solution for Part 2
-        return 0;
+        \$sum = 0;
+
+        return \$sum;
     }
 
     /**
@@ -174,8 +174,8 @@ YAML;
     // @phpcs:disable Generic.Files.LineLength
     $newRow = sprintf(
         "| %s | %s | [src/Day%s.php](./src/Day%s.php) | `TBD` | " .
-        "[![Day-%s](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-%s.yml/badge.svg?branch=main)]" .
-        "(https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-%s.yml?query=branch%%3Amain) |\n",
+            "[![Day-%s](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-%s.yml/badge.svg?branch=main)]" .
+            "(https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-%s.yml?query=branch%%3Amain) |\n",
         $dayFormatted,
         $name,
         $dayFormatted,

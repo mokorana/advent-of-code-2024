@@ -12,6 +12,7 @@ My attempts at the [Advent of Code 2024](https://adventofcode.com/2024) challeng
 
 † The measured execution time in GitHub Actions
 
+| 06 | Guard Gallivant | [src/Day06.php](./src/Day06.php) | `TBD` | [![Day-06](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-06.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-06.yml?query=branch%3Amain) |
 ## Installation
 
 ### Installing on your machine
