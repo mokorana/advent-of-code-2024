@@ -216,8 +216,7 @@ YAML;
     }
 
     // Calculate the actual position in the full file
-    $insertPosition = $tableStart + $lastNewline + 1; // +1 to place the new row on a new line
-
+    $insertPosition = $tableStart + $lastNewline;
     // Insert the new row after the last row
     $updatedContent = substr_replace($readmeContent, $newRow, $insertPosition, 0);
 
