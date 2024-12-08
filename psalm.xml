@@ -14,4 +14,12 @@
             <directory name="vendor" />
         </ignoreFiles>
     </projectFiles>
+  <issueHandlers>
+    <!-- Suppress "PossiblyUnusedProperty" globally -->
+    <PossiblyUnusedProperty>
+      <errorLevel type="suppress">
+        <file name="src/Day08.php" />
+        </errorLevel>
+      </PossiblyUnusedProperty>
+    </issueHandlers>
 </psalm>
