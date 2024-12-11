@@ -14,7 +14,7 @@ My attempts at the [Advent of Code 2024](https://adventofcode.com/2024) challeng
 | 08  | Resonant Collinearity | [src/Day08.php](./src/Day08.php) | `0.003884s`  | [![Day-08](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-08.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-08.yml?query=branch%3Amain) |
 | 09  | Disk Fragmenter       | [src/Day09.php](./src/Day09.php) | `42.189519s` | [![Day-09](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-09.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-09.yml?query=branch%3Amain) |
 | 10  | Hoof It               | [src/Day10.php](./src/Day10.php) | `0.028195s`  | [![Day-10](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-10.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-10.yml?query=branch%3Amain) |
-| 11  | Plutonian Pebbles     | [src/Day11.php](./src/Day11.php) | `TBD`        | [![Day-11](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-11.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-11.yml?query=branch%3Amain) |
+| 11  | Plutonian Pebbles     | [src/Day11.php](./src/Day11.php) | `0.016682s`        | [![Day-11](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-11.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-11.yml?query=branch%3Amain) |
 
 † The measured execution time in GitHub Actions
 
