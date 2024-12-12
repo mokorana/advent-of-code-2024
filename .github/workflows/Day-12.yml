@@ -13,11 +13,11 @@ jobs:
         with:
           key_encoded: ${{ secrets.GIT_CRYPT_KEY }}
       - uses: php-actions/composer@v6
-      - name: Increase Xdebug Limits
+      - name: Create Custom php.ini
         run: |
-          echo "xdebug.max_nesting_level=512" >> $(php --ini | grep "Loaded Configuration File" | sed -e "s|.*:\s*||")
-          echo "xdebug.max_stack_frames=512" >> $(php --ini | grep "Loaded Configuration File" | sed -e "s|.*:\s*||")
-          php --ini # Verify changes
-      - name: Run
-        run: php src/main.php 12 -b
+          cp $(php --ini | grep "Loaded Configuration File" | sed -e "s|.*:\s*||") ./php.ini
+          echo "xdebug.max_nesting_level=512" >> ./php.ini
+          echo "xdebug.max_stack_frames=512" >> ./php.ini
+      - name: Run with Custom php.ini
+        run: php -c ./php.ini src/main.php 12 -b
 
