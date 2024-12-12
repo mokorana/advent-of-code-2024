@@ -6,7 +6,7 @@
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-12 09:11:35
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-12 15:18:53
+ * @Last    Modified time: 2024-12-12 15:31:34
  *
  * @package Aoc
  */
@@ -66,7 +66,7 @@ class Day12 extends AbstractDay
             if (
                 $rd < 0 || $cd < 0 ||
                 $rd >= count($grid) || $cd >= count($grid[$row]) ||
-                $grid[$rd][$cd] != $grid[$row][$col]
+                $grid[$rd][$cd] !== $grid[$row][$col]
             ) {
                 $perimeter += 1;
                 $fences["$row-$col"][$d] = true;
