@@ -6,7 +6,7 @@
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-12 09:11:35
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-12 15:56:47
+ * @Last    Modified time: 2024-12-12 16:15:26
  *
  * @package Aoc
  */
@@ -75,8 +75,6 @@ class Day12 extends AbstractDay
                 [$a, $p] = $this->findRegion($grid, $rd, $cd, $fences);
                 $area += $a;
                 $perimeter += $p;
-            } else {
-                continue;
             }
         }
 
