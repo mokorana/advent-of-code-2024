@@ -6,7 +6,7 @@
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-17 14:23:17
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-17 20:53:53
+ * @Last    Modified time: 2024-12-17 20:57:54
  *
  * @package Aoc
  */
@@ -128,7 +128,7 @@ class Day17 extends AbstractDay
      */
     public function solvePart2(array $parts): int
     {
-        [_, $regB, $regC, $program] = $this->parseInput($parts);
+        [, $regB, $regC, $program] = $this->parseInput($parts);
         $pt2 = 0;
 
         // Iterate backward through the program to find the correct seed ($pt2)
