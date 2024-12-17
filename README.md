@@ -20,7 +20,7 @@ My attempts at the [Advent of Code 2024](https://adventofcode.com/2024) challeng
 | 14  | Restroom Redoubt       | [src/Day14.php](./src/Day14.php) | `1.774646s`     | [![Day-14](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-14.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-14.yml?query=branch%3Amain) |
 | 15  | Warehouse Woes         | [src/Day15.php](./src/Day15.php) | `0.039639s`     | [![Day-15](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-15.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-15.yml?query=branch%3Amain) |
 | 16  | Reindeer Maze          | [src/Day16.php](./src/Day16.php) | `1,011.829665s` | [![Day-16](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-16.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-16.yml?query=branch%3Amain) |
-| 17  | Chronospatial Computer | [src/Day17.php](./src/Day17.php) | `TBD`           | [![Day-17](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-17.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-17.yml?query=branch%3Amain) |
+| 17  | Chronospatial Computer | [src/Day17.php](./src/Day17.php) | `224.071246s`           | [![Day-17](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-17.yml/badge.svg?branch=main)](https://github.com/mokorana/advent-of-code-2024/actions/workflows/Day-17.yml?query=branch%3Amain) |
 
 † The measured execution time in GitHub Actions
 
