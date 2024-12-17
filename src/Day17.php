@@ -6,7 +6,7 @@
  * @Author: Digitalbüro Mokorana
  * @Date:   2024-12-17 14:23:17
  * @Last    Modified by:   Stefan Koch <stefan.koch@mokorana.de>
- * @Last    Modified time: 2024-12-17 20:57:54
+ * @Last    Modified time: 2024-12-17 21:01:45
  *
  * @package Aoc
  */
@@ -140,7 +140,6 @@ class Day17 extends AbstractDay
             while ($this->run($program, $pt2, $regB, $regC) !== array_slice($program, $i)) {
                 $pt2++;
             }
-            echo $pt2 . "\n";
         }
 
         return $pt2;
